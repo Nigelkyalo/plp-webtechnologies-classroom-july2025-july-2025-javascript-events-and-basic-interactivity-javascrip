@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive JavaScript Assignmet 6</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1> Interactive Demo 🚀</h1>
+    <button id="themeToggle">🌙 Toggle Dark Mode</button>
+  </header>
+
+  <!-- Part 2: Interactive Features -->
+  <section>
+    <h2>🎮 Click Game</h2>
+    <p>Clicks: <span id="counter">0</span></p>
+    <button id="incrementBtn">+1</button>
+    <button id="resetBtn">Reset</button>
+  </section>
+
+  <section>
+    <h2>❓ FAQ Section</h2>
+    <div class="faq">
+      <h3 class="faq-question">What is JavaScript?</h3>
+      <p class="faq-answer hidden">JavaScript is a programming language used to make web pages interactive.</p>
+    </div>
+    <div class="faq">
+      <h3 class="faq-question">What is DOM manipulation?</h3>
+      <p class="faq-answer hidden">It means using JavaScript to change the content or style of a web page dynamically.</p>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section>
+    <h2>📋 Sign Up Form</h2>
+    <form id="signupForm" novalidate>
+      <label>
+        Name:
+        <input type="text" id="name" required />
+        <small class="error" id="nameError"></small>
+      </label>
+      <br />
+
+      <label>
+        Email:
+        <input type="email" id="email" required />
+        <small class="error" id="emailError"></small>
+      </label>
+      <br />
+
+      <label>
+        Password:
+        <input type="password" id="password" required />
+        <small class="error" id="passwordError"></small>
+      </label>
+      <br />
+
+      <button type="submit">Register</button>
+      <p id="successMessage" class="success"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
